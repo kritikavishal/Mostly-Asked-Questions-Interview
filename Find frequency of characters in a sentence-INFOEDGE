@@ -1,0 +1,20 @@
+package DSA;
+import java.util.*;
+public class infoedge_2 {
+	public static void main(String[] args)
+	{
+		String sen="I have a loving boyfriend";
+		String s1=sen.replace(" ","");
+		char[] gyno=s1.toCharArray();
+		Map <Character,Integer> ms=new HashMap<>();
+		
+		for (char ch:gyno) {
+				ms.put(ch, ms.getOrDefault(ch, 0) + 1);
+		}
+		
+			System.out.println(ms);
+		
+	}
+
+}
+
